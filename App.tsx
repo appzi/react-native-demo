@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {AppziSurvey} from './src/appzi/appzi-survey';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -89,6 +90,10 @@ function App(): JSX.Element {
           <Section title="Learn More">
             Read the docs to discover what to do next:
           </Section>
+          <AppziSurvey
+            surveyId="1b9e9865-e602-43ee-b94c-854149fe75a3"
+            surveyData={{test: 1}}
+          />
           <LearnMoreLinks />
         </View>
       </ScrollView>
