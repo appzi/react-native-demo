@@ -38,10 +38,17 @@ export const AppziSurvey: React.FC<{
       const newHeight = msg.height;
       setDesiredHeight(newHeight);
     }
+    if (msg.type === 'w-submit') {
+      console.warn('survey submitted', msg.payload);
+    }
+    if (msg.type === 'w-dismiss') {
+      console.warn('survey dismissed');
+    }
   };
 
   return (
     <View
+      // renderToHardwareTextureAndroid={true}
       style={{
         overflow: 'hidden',
         flex: 1,

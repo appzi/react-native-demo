@@ -87,13 +87,16 @@ function App(): JSX.Element {
           <Section title="Debug">
             <DebugInstructions />
           </Section>
+
+          <AppziSurvey
+            surveyId="fc0fa9b3-977a-43f4-89fb-c63d0a7e5797 "
+            surveyData={{test: 1}}
+          />
+
           <Section title="Learn More">
             Read the docs to discover what to do next:
           </Section>
-          <AppziSurvey
-            surveyId="1b9e9865-e602-43ee-b94c-854149fe75a3"
-            surveyData={{test: 1}}
-          />
+
           <LearnMoreLinks />
         </View>
       </ScrollView>
